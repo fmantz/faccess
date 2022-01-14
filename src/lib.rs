@@ -80,7 +80,7 @@ mod imp {
     use std::ffi::CString;
     use std::os::unix::ffi::OsStrExt;
 
-    use libc::{c_int, c_char, faccessat, AT_FDCWD, F_OK, R_OK, W_OK, X_OK};
+    use libc::{c_char, c_int, faccessat, AT_FDCWD, F_OK, R_OK, W_OK, X_OK};
 
     // Not provided on Android
     #[cfg(not(target_os = "android"))]
