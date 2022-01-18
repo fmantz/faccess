@@ -504,7 +504,7 @@ pub trait PathExt {
 
 impl PathExt for Path {
     fn access(&self, mode: AccessMode) -> io::Result<()> {
-        imp::access(&self, mode)
+        imp::access(self, mode)
     }
 }
 
